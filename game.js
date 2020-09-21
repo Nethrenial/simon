@@ -56,7 +56,7 @@ $(document).keypress(function() {
     started = true;
   }
 });
-$(document).click(function() {
+$("h1").click(function() {
 
   if (!started) {
 
@@ -65,6 +65,7 @@ $(document).click(function() {
     started = true;
   }
 });
+
 
 
 
@@ -86,7 +87,7 @@ function checkAnswer(currentLevel) {
     setTimeout(function() {
       $("body").removeClass("gameover");
     }, 200);
-    $("h1").text("Game Over, Press Any Key to Restart");
+    $("h1").text("Game Over, Press A Key or click here to Retart");
     startOver();
 
 
